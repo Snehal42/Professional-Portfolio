@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Snehal Darade | Full Stack Developer</title>
     <!-- Standard Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -14,7 +16,13 @@
             --accent: #2563eb;
             --border: #e5e7eb;
         }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: 'Inter', sans-serif;
             background: #f3f4f6;
@@ -24,55 +32,152 @@
         }
 
         .actions {
-            position: fixed; top: 1rem; right: 1rem;
-            display: flex; gap: 10px; z-index: 100;
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            display: flex;
+            gap: 10px;
+            z-index: 100;
         }
+
         .btn {
-            padding: 8px 14px; background: #000; color: #fff;
-            text-decoration: none; border-radius: 6px; font-size: 0.8rem;
-            font-weight: 600; display: flex; align-items: center; gap: 6px;
+            padding: 8px 14px;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }
 
         .resume-page {
-            max-width: 800px; margin: 0 auto; background: #fff;
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
             padding: 2rem 3rem;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-            min-height: 950px; 
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            min-height: 950px;
         }
 
-        header { text-align: center; margin-bottom: 1rem; }
-        h1 { font-family: 'Outfit', sans-serif; font-size: 2.2rem; margin-bottom: 0.2rem; color: #000; }
-        .role { font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.95rem; margin-bottom: 0.4rem; }
-        .contact { font-size: 0.85rem; color: var(--text-light); }
-        .contact a { color: inherit; text-decoration: none; }
+        header {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
 
-        section { margin-bottom: 1rem; }
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.2rem;
+            margin-bottom: 0.2rem;
+            color: #000;
+        }
+
+        .role {
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.95rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .contact {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .contact a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        section {
+            margin-bottom: 1rem;
+        }
+
         h2 {
-            font-family: 'Outfit', sans-serif; font-size: 0.95rem; text-transform: uppercase;
-            border-bottom: 1.5px solid var(--border); padding-bottom: 2px;
-            margin-bottom: 0.5rem; color: #374151; letter-spacing: 0.05em;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            border-bottom: 1.5px solid var(--border);
+            padding-bottom: 2px;
+            margin-bottom: 0.5rem;
+            color: #374151;
+            letter-spacing: 0.05em;
         }
 
-        .summary { font-size: 0.85rem; color: #374151; }
+        .summary {
+            font-size: 0.85rem;
+            color: #374151;
+        }
 
-        .entry { margin-bottom: 0.6rem; }
-        .entry-top { display: flex; justify-content: space-between; font-weight: 700; font-size: 0.95rem; }
-        .entry-sub { display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-light); font-style: italic; margin-top: 1px; }
+        .entry {
+            margin-bottom: 0.6rem;
+        }
 
-        ul { padding-left: 1rem; margin-top: 0.2rem; }
-        li { font-size: 0.85rem; margin-bottom: 0.15rem; list-style-type: disc; }
+        .entry-top {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
 
-        .skills-table { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 40px; }
-        .skill-group { font-size: 0.88rem; }
-        .skill-group strong { color: #1f2937; }
+        .entry-sub {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-style: italic;
+            margin-top: 1px;
+        }
+
+        ul {
+            padding-left: 1rem;
+            margin-top: 0.2rem;
+        }
+
+        li {
+            font-size: 0.85rem;
+            margin-bottom: 0.15rem;
+            list-style-type: disc;
+        }
+
+        .skills-table {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px 40px;
+        }
+
+        .skill-group {
+            font-size: 0.88rem;
+        }
+
+        .skill-group strong {
+            color: #1f2937;
+        }
 
         @media print {
-            body { padding: 0; background: #fff; }
-            .resume-page { box-shadow: none; padding: 1.5rem 2.5rem; width: 100%; border: none; }
-            .actions { display: none; }
+            body {
+                padding: 0;
+                background: #fff;
+            }
+
+            .resume-page {
+                box-shadow: none;
+                padding: 1.5rem 2.5rem;
+                width: 100%;
+                border: none;
+            }
+
+            .actions {
+                display: none;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="actions">
         <a href="index.html" class="btn"><i class="fa-solid fa-arrow-left"></i> Portfolio</a>
@@ -82,11 +187,11 @@
     <main class="resume-page">
         <header>
             <h1>Snehal Darade</h1>
-            <div class="role">Full Stack Developer | Backend Specialist</div>
+            <div class="role">Full Stack Developer</div>
             <div class="contact">
-                Pune, Maharashtra | 7822077906 | 
-                <a href="mailto:daradesnehal2005@gmail.com">Email</a> | 
-                <a href="https://www.linkedin.com/in/snehal-darade-897000310">LinkedIn</a> | 
+                Pune, Maharashtra | 7822077906 |
+                <a href="mailto:daradesnehal2005@gmail.com">Email</a> |
+                <a href="https://www.linkedin.com/in/snehal-darade-897000310">LinkedIn</a> |
                 <a href="https://github.com/Snehal42">GitHub</a>
             </div>
         </header>
@@ -94,18 +199,20 @@
         <section>
             <h2>Summary</h2>
             <p class="summary">
-                Ambitious **Full Stack Developer** specializing in **Backend Engineering**. Proficient in architecting efficient RESTful APIs, securing applications with robust authentication models, and managing complex database schemas with clean, modular code.
+                Ambitious **Full Stack Developer** specializing in **Backend Engineering**. Proficient in architecting
+                efficient RESTful APIs, securing applications with robust authentication models, and managing complex
+                database schemas with clean, modular code.
             </p>
         </section>
 
         <section>
             <h2>Skills</h2>
             <div class="skills-table">
-                <div class="skill-group"><strong>Backend:</strong> Node.js, Express.js, JWT, Auth, MVC, REST APIs</div>
-                <div class="skill-group"><strong>Frontend:</strong> React.js, JavaScript (ES6+), HTML5, CSS3</div>
-                <div class="skill-group"><strong>Databases:</strong> MySQL, MongoDB, NoSQL</div>
-                <div class="skill-group"><strong>Languages:</strong> Java, JavaScript, SQL, C++</div>
-                <div class="skill-group"><strong>Core:</strong> DSA, OOP, DBMS, System Design, Operating Systems</div>
+                <div class="skill-group"><strong>Backend:</strong> Node.js, Express.js, Auth, MVC, REST APIs</div>
+                <div class="skill-group"><strong>Frontend:</strong> JavaScript (ES6+), HTML5, CSS3</div>
+                <div class="skill-group"><strong>Databases:</strong> MySQL, MongoDB</div>
+                <div class="skill-group"><strong>Languages:</strong> Java, JavaScript, SQL</div>
+                <div class="skill-group"><strong>Core:</strong> DSA, OOP, DBMS, Operating Systems</div>
                 <div class="skill-group"><strong>Tools:</strong> Git, GitHub, Postman, Vercel, Render</div>
             </div>
         </section>
@@ -133,6 +240,7 @@
                     <li>Architected a robust backend for a task management system with secure authentication.</li>
                     <li>Implemented full CRUD operations and relational database schemas to manage complex workflows.</li>
                     <li>Configured automated CI/CD pipelines via Vercel for seamless staging and production updates.</li>
+                    <li>Optimized system performance using efficient indexing and database connection pooling strategies.</li>
                 </ul>
             </div>
             <div class="entry">
@@ -141,6 +249,7 @@
                     <li>Designed an AI-driven backend integration using OpenAI Vision API for real-time analysis.</li>
                     <li>Developed an accessible service layer with voice guidance and multi-language support.</li>
                     <li>Integrated gamified awareness modules to educate users on AI-driven social engineering threats.</li>
+                    <li>Enhanced user accessibility through an 'Elder-First' design philosophy, prioritizing simplified navigation.</li>
                 </ul>
             </div>
         </section>
@@ -169,4 +278,5 @@
         </section>
     </main>
 </body>
+
 </html>
