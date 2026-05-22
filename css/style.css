@@ -647,6 +647,46 @@ h1, h2, h3, h4, .logo {
     color: var(--accent-blue);
 }
 
+/* --- Achievements Section --- */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.achievement-card {
+    padding: 2.5rem;
+    background: var(--secondary-bg);
+    border-radius: 2rem;
+    border: 1px solid var(--glass-border);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-blue);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.achievement-card i {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.achievement-card h4 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.achievement-card p {
+    color: var(--text-muted);
+}
+
 /* --- Responsive --- */
 @media (max-width: 992px) {
     .hero .container, .about-grid, .contact-grid, .exp-edu .row {
