@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snehal Darade | Web Developer & Problem Solver</title>
+    <meta name="description" content="Portfolio of Snehal Darade, a Computer Engineering student and Web Developer specializing in MERN Stack, Java, and scalable backend systems.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Snehal<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="subtitle">Hi, I'm Snehal Darade</p>
+                <h1 class="title">Full Stack Developer & <br><span class="accent-text">Backend Specialist</span></h1>
+                <p class="description">Architecting scalable backends and modern full-stack applications with Node.js, Java, and Cloud technologies. Passionate about system design and logic-driven solutions.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="resume.html" class="btn btn-secondary">View Resume <i class="fa-solid fa-file-invoice"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-box">
+                    <!-- Profile Placeholder or Illustration -->
+                    <div class="blob-bg"></div>
+                    <img src="images/profile.png" alt="Snehal Darade" class="profile-img">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <h2 class="section-title" data-title="My Story">About Me</h2>
+            <div class="about-grid">
+                <div class="about-info">
+                    <p>I’m Snehal Darade, a Computer Engineering student (CGPA 8.81) passionate about web development, backend systems, and scalable applications. I enjoy building real-world projects and solving technical challenges with clean, efficient code.</p>
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <h4>Education</h4>
+                            <p>Bhivarabai Sawant Institute (BSIOTR), Wagholi</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <h4>Experience</h4>
+                            <p>Web Developer Intern</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h4>Location</h4>
+                            <p>India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-num" data-val="10">0</span><span class="plus">+</span>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num" data-val="8">0</span><span class="plus">.81</span>
+                        <p>Current CGPA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills section-padding">
+        <div class="container">
+            <h2 class="section-title" data-title="Expertise">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><i class="fa-brands fa-html5"></i> HTML</div>
+                        <div class="skill-item"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+                        <div class="skill-item"><i class="fa-brands fa-js"></i> JavaScript</div>
+                        <div class="skill-item"><i class="fa-brands fa-react"></i> React</div>
+                        <div class="skill-item"><i class="fa-solid fa-wind"></i> Tailwind</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><i class="fa-brands fa-node-js"></i> Node.js</div>
+                        <div class="skill-item"><i class="fa-solid fa-server"></i> Express.js</div>
+                        <div class="skill-item"><i class="fa-solid fa-link"></i> REST APIs</div>
+                        <div class="skill-item"><i class="fa-solid fa-shield-halved"></i> Auth</div>
+                        <div class="skill-item"><i class="fa-brands fa-java"></i> Java</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Database & Tools</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><i class="fa-solid fa-database"></i> MongoDB</div>
+                        <div class="skill-item"><i class="fa-solid fa-database"></i> SQL</div>
+                        <div class="skill-item"><i class="fa-brands fa-github"></i> GitHub</div>
+                        <div class="skill-item"><i class="fa-solid fa-cloud"></i> Cloudinary</div>
+                        <div class="skill-item"><i class="fa-solid fa-paper-plane"></i> Postman</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <h2 class="section-title" data-title="Portfolio">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Major Upcoming -->
+                <div class="project-card upcoming">
+                    <div class="project-img">
+                        <img src="images/wanderlust.jpg" alt="Wanderlust Real Estate">
+                        <span class="badge">Major Upcoming</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Wanderlust Real Estate</h3>
+                        <p>A comprehensive real estate platform for property discovery and management.</p>
+                        <div class="tech-stack">
+                            <span>MERN</span> <span>Redux</span> <span>Cloudinary</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Management -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/project-mgmt.jpg" alt="Project Management Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Management App</h3>
+                        <p>Tracking platform for startups where employees manage tasks and workflows.</p>
+                        <div class="tech-stack">
+                            <span>Node.js</span> <span>Express</span> <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Snehal42/project-management-app" target="_blank"><i class="fa-brands fa-github"></i> Source</a>
+                            <a href="https://project-management-3qoqfvitx-snehal-darades-projects.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Deepfake Guard -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/deepfake.jpg" alt="Deepfake Guard">
+                    </div>
+                    <div class="project-info">
+                        <h3>Deepfake Guard</h3>
+                        <p>AI-powered scam awareness and detection platform with high accessibility.</p>
+                        <div class="tech-stack">
+                            <span>React</span> <span>Python</span> <span>AI/ML</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Snehal42/DeepFake" target="_blank"><i class="fa-brands fa-github"></i> Source</a>
+                            <a href="https://deepfake-guard-seven.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post Hub -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Post Hub</h3>
+                        <p>Social platform for content sharing and community interaction.</p>
+                        <div class="tech-stack">
+                            <span>MERN</span> <span>Socket.io</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Snehal42"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Chatbot -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>AI Chatbot</h3>
+                        <p>Intelligent interaction system built with modern JS frameworks.</p>
+                        <div class="tech-stack">
+                            <span>JavaScript</span> <span>OpenAI API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Snehal42"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Game 1 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Tic Tac Toe</h3>
+                        <p>Classic strategy game with a clean, modern UI and local multiplayer.</p>
+                        <div class="tech-stack">
+                            <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Snehal42"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Game 2 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Simon Says</h3>
+                        <p>Memory-based pattern matching game with sound and light cues.</p>
+                        <div class="tech-stack">
+                            <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Snehal42"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more">
+                <a href="https://github.com/Snehal42" class="btn btn-secondary">View More on GitHub <i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education -->
+    <section id="experience" class="exp-edu section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="section-title left" data-title="History">Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="date">Sept 2025 - Feb 2026</span>
+                            <h4>Intern – Web Developer</h4>
+                            <h5>Cubics Softwares Solution (Remote)</h5>
+                            <p>Developed and optimized features using JavaScript and React.js. Assisted in backend logic, API integration, and improved UI responsiveness.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="date">2026</span>
+                            <h4>Navira Hackathon</h4>
+                            <h5>Top 25 Team</h5>
+                            <p>Selected in the top 25 teams. Organized at Cummins College of Engineering, Pune.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h2 class="section-title left" data-title="Academic">Education</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="date">Aug 2023 - Present</span>
+                            <h4>Bachelor of Engineering</h4>
+                            <h5>BSIOTR / SPPU</h5>
+                            <p>Computer Engineering. Current SGPA: 8.81 (till 5th Sem).</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="date">2022 - 2023</span>
+                            <h4>Higher Secondary School (HSC)</h4>
+                            <p>Completed with 77% marks.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="date">2020 - 2021</span>
+                            <h4>Secondary School (SSC)</h4>
+                            <p>Completed with 90% marks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <h2 class="section-title" data-title="Get In Touch">Contact Me</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Let's Build Something Together</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                    <div class="contact-links">
+                        <div class="link-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <span>Email Me</span>
+                                <a href="mailto:daradesnehal2005@gmail.com">daradesnehal2005@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="link-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <span>Phone</span>
+                                <a href="tel:7822077906">7822077906</a>
+                            </div>
+                        </div>
+                        <div class="link-item">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <div>
+                                <span>LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/snehal-darade-897000310" target="_blank">Snehal Darade</a>
+                            </div>
+                        </div>
+                        <div class="link-item">
+                            <i class="fa-brands fa-github"></i>
+                            <div>
+                                <span>GitHub</span>
+                                <a href="https://github.com/Snehal42" target="_blank">Snehal42</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="input-group">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Snehal Darade. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/Snehal42"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/snehal-darade-897000310"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

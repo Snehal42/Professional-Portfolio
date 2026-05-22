@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Snehal Darade | Full Stack Developer</title>
+    <!-- Standard Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --text: #111827;
+            --text-light: #4b5563;
+            --accent: #2563eb;
+            --border: #e5e7eb;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f3f4f6;
+            color: var(--text);
+            padding: 1.5rem;
+            line-height: 1.35;
+        }
+
+        .actions {
+            position: fixed; top: 1rem; right: 1rem;
+            display: flex; gap: 10px; z-index: 100;
+        }
+        .btn {
+            padding: 8px 14px; background: #000; color: #fff;
+            text-decoration: none; border-radius: 6px; font-size: 0.8rem;
+            font-weight: 600; display: flex; align-items: center; gap: 6px;
+        }
+
+        .resume-page {
+            max-width: 800px; margin: 0 auto; background: #fff;
+            padding: 2rem 3rem;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            min-height: 950px; 
+        }
+
+        header { text-align: center; margin-bottom: 1rem; }
+        h1 { font-family: 'Outfit', sans-serif; font-size: 2.2rem; margin-bottom: 0.2rem; color: #000; }
+        .role { font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.95rem; margin-bottom: 0.4rem; }
+        .contact { font-size: 0.85rem; color: var(--text-light); }
+        .contact a { color: inherit; text-decoration: none; }
+
+        section { margin-bottom: 1rem; }
+        h2 {
+            font-family: 'Outfit', sans-serif; font-size: 0.95rem; text-transform: uppercase;
+            border-bottom: 1.5px solid var(--border); padding-bottom: 2px;
+            margin-bottom: 0.5rem; color: #374151; letter-spacing: 0.05em;
+        }
+
+        .summary { font-size: 0.85rem; color: #374151; }
+
+        .entry { margin-bottom: 0.6rem; }
+        .entry-top { display: flex; justify-content: space-between; font-weight: 700; font-size: 0.95rem; }
+        .entry-sub { display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-light); font-style: italic; margin-top: 1px; }
+
+        ul { padding-left: 1rem; margin-top: 0.2rem; }
+        li { font-size: 0.85rem; margin-bottom: 0.15rem; list-style-type: disc; }
+
+        .skills-table { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 40px; }
+        .skill-group { font-size: 0.88rem; }
+        .skill-group strong { color: #1f2937; }
+
+        @media print {
+            body { padding: 0; background: #fff; }
+            .resume-page { box-shadow: none; padding: 1.5rem 2.5rem; width: 100%; border: none; }
+            .actions { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="actions">
+        <a href="index.html" class="btn"><i class="fa-solid fa-arrow-left"></i> Portfolio</a>
+        <a href="javascript:window.print()" class="btn"><i class="fa-solid fa-print"></i> Save as PDF</a>
+    </div>
+
+    <main class="resume-page">
+        <header>
+            <h1>Snehal Darade</h1>
+            <div class="role">Full Stack Developer | Backend Specialist</div>
+            <div class="contact">
+                Pune, Maharashtra | 7822077906 | <a href="mailto:daradesnehal2005@gmail.com">daradesnehal2005@gmail.com</a>
+            </div>
+            <div class="contact" style="margin-top: 4px;">
+                <a href="https://linkedin.com/in/snehal-darade">linkedin.com/in/snehal-darade</a> | 
+                <a href="https://github.com/Snehal42">github.com/Snehal42</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Summary</h2>
+            <p class="summary">
+                Ambitious **Full Stack Developer** specializing in **Backend Engineering**. Proficient in architecting efficient RESTful APIs, securing applications with robust authentication models, and managing complex database schemas with clean, modular code.
+            </p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills-table">
+                <div class="skill-group"><strong>Backend:</strong> Node.js, Express.js, JWT, Auth, MVC, REST APIs</div>
+                <div class="skill-group"><strong>Frontend:</strong> React.js, JavaScript (ES6+), HTML5, CSS3</div>
+                <div class="skill-group"><strong>Databases:</strong> MySQL, MongoDB, NoSQL</div>
+                <div class="skill-group"><strong>Languages:</strong> Java, JavaScript, SQL, C++</div>
+                <div class="skill-group"><strong>Core:</strong> DSA, OOP, DBMS, System Design, Operating Systems</div>
+                <div class="skill-group"><strong>Tools:</strong> Git, GitHub, Postman, Vercel, Render</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Internship</h2>
+            <div class="entry">
+                <div class="entry-top">
+                    <span>Intern – Web Developer (Remote)</span>
+                    <span>Sept 2025 – Feb 2026</span>
+                </div>
+                <div class="entry-sub">Cubics Softwares Solution</div>
+                <ul>
+                    <li>Spearheaded backend logic implementation and API integration.</li>
+                    <li>Developed frontend modules using React.js, improving responsiveness.</li>
+                    <li>Managed complex application flows and ensured seamless cloud deployment.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="entry">
+                <div class="entry-top">Project Management Website | Node.js, Express, MySQL</div>
+                <ul>
+                    <li>Architected a robust backend for a task management system with secure authentication.</li>
+                    <li>Implemented full CRUD operations and relational database schemas to manage complex workflows.</li>
+                </ul>
+            </div>
+            <div class="entry">
+                <div class="entry-top">Deepfake Guard — AI Scam Detection | OpenAI Vision, React</div>
+                <ul>
+                    <li>Designed an AI-driven backend integration using OpenAI Vision API for real-time analysis.</li>
+                    <li>Developed an accessible service layer with voice guidance and multi-language support.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="entry">
+                <div class="entry-top">
+                    <span>Bachelor of Engineering (Computer Engineering)</span>
+                    <span>2023 – 2026</span>
+                </div>
+                <div class="entry-sub">
+                    <span>BSIOTR (Savitribai Phule Pune University), Wagholi</span>
+                    <span>SGPA: 8.81 (till 5th Sem)</span>
+                </div>
+            </div>
+            <div class="entry">
+                <div class="entry-top">
+                    <span>HSC (77%) | SSC (90%)</span>
+                    <span>2023 | 2021</span>
+                </div>
+                <div class="entry-sub">
+                    <span>Shree Ambika Junior College | MTKV</span>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
